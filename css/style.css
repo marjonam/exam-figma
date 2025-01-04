@@ -1,34 +1,5 @@
-/* barlow-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* barlow-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/barlow-v12-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* barlow-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/barlow-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/heebo-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -36,31 +7,319 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-}
-
-:root {
-  --background-color: #f0f4f4;
-  --h3-color: #3e54a3;
-  --p-color: #1c2022;
-
-  --p-size: 2.4rem;
-  --p-right: 2rem;
-  --h3-size: 4.5rem;
-}
-
 .container {
-  background-color: var(--background-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.left-div {
+.header-wrapper {
+  background-image: url(../assets/images/bg-pattern.png);
+  background-color: #0a0d1603;
+  background-color: #ffffff;
+  border: 1.2px solid;
+  border-image-source: radial-gradient(
+    37.55% 33.81% at 50% 75.06%,
+    rgba(10, 13, 22, 0.01) 20.5%,
+    rgba(10, 13, 22, 0.04) 100%
+  );
+}
+
+.header {
+  padding-top: 34px;
+  padding-bottom: 40px;
+}
+
+.header-container {
+  max-width: 1224px;
+}
+
+.image-header {
+  max-width: 192px;
+  display: flex;
+}
+
+.join {
+  padding-top: 40px;
+  padding-bottom: 85px;
+}
+
+.join-container {
+  max-width: 1210px;
+}
+
+.join-title {
+  font-family: "Martian Mono", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 74.4px;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  background: linear-gradient(107.24deg, #fea36f -11.37%, #062630 61.84%);
+  color: transparent;
+  background-clip: text;
+}
+
+.join-text {
+  width: 570px;
+  color: #385159;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.join-button {
+  text-decoration: none;
+  cursor: grab;
+  width: 380px;
+  display: flex;
+  font-family: "Martian Mono", sans-serif;
+  background-color: #ffffff;
+  color: #062630;
+  border: 2px solid #062630;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 23px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.join-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.join-info-img {
+  width: 110px;
+}
+
+.join-info-second {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-info-second-img {
+  width: 24px;
+}
+
+.join-info-text {
+  font-family: "Martian Mono", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #385159;
+}
+
+.info-img {
+  max-width: 536px;
+  border-radius: 12px;
+}
+
+.join-right {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.join-information {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+}
+
+.read {
   background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
-h3 {
-  color: var(--h3-color);
-  font-size: var(--h3-size);
-  font-weight: 500;
-  font-family: "Barlow";
+.read-container {
+  max-width: 1210px;
+}
+
+.read-right {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.read-img {
+  max-width: 560px;
+  border-radius: 12px;
+}
+
+.read-title {
+  color: #062630;
+  font-family: "Martian Mono", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  text-align: left;
+  margin-bottom: 34px;
+  line-height: 65px;
+}
+
+.read-wrapper {
+  max-width: 431px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.read-informations {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.read-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.club {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.club-container {
+  max-width: 1210px;
+}
+
+.club-title {
+  width: 535px;
+  font-family: "Martian Mono", sans-serif;
+  color: #062630;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.club-text {
+  max-width: 535px;
+  color: #385159;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.club-img {
+  order: 2;
+  max-width: 560px;
+  border-radius: 12px;
+}
+
+.club-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+.club-text .bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: #062630;
+}
+
+.club-info {
+  order: 1;
+  max-width: 570px;
+}
+
+.journey {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.journey-container {
+  max-width: 1220px;
+  background-image: url(../assets/images/pattern-light-bg.svg);
+}
+.journey-right {
+  border-radius: 10px;
+  background-color: #faf5f3;
+  background-image: url(../assets/images/pattern-light-bg.svg);
+}
+.journey-title {
+  font-family: "Martian Mono", sans-serif;
+  color: #062630;
+  text-align: center;
+  width: 512px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 64px;
+  padding-top: 80px;
+  letter-spacing: -0.04em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.journey-information {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.journey-wrapper {
+  width: 226px;
+  background-image: url(../assets/images/pattern-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.journey-wrapper:nth-child(4) {
+  background-image: none;
+}
+.journey-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-family: "Martian Mono";
+  border: 2px solid #062630;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 24px;
+}
+.journey-text {
+  font-family: "Martian Mono";
+  color: #062630;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  letter-spacing: -0.01em;
 }
