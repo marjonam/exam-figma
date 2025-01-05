@@ -461,22 +461,8 @@
   text-align: center;
 }
 
-.footer-container {
-  background-color: #062630;
-  background-image: url(../assets/images/pattern-dark-bg.svg);
-}
-
-.footer-title {
-  color: #faf5f3;
-  font-family: "Martian Mono", sans-serif;
-  font-size: 38px;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: -2px;
-  text-align: center;
-  width: 685px;
-}
 .footer-button {
+  display: flex;
   margin-top: 40px;
   text-decoration: none;
   cursor: grab;
